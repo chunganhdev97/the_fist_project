@@ -1,0 +1,10 @@
+xay dung lp ma tran so nguyen n*m
+xay dung phuong thuc khoi tao ngau nhien K 
+cac o trong ma tran co gia tri bang -1
+K<n*m
+*voi nhung o khong bang -1 dem so o chung canh va chung dinh 
+cua o do
+3545
+110610
+C521A552 - D9B63EEA - 9AD20A4A - 283791F3
+ EEEE13FB - 32C6927F - 0EEB1E30 - 24531A15
