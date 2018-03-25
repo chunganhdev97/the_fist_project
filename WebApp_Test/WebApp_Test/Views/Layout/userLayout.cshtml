@@ -1,0 +1,218 @@
+﻿
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+  <link rel=" icon" type="image/svg" sizes="96x96" href="~/Content/image/network-fav.png" />
+    <link rel="network-icon" href="~/Content/image/network-icon .png"/>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home Page</title>
+    <!---Font and icon-->
+    <link href="~/Content/css-userLayout/font.css" rel="stylesheet" />
+    <link href="~/Content/css-userLayout/font-icons.css" rel="stylesheet" />
+    <!--Animation lib-->
+    <link href="~/Content/css-userLayout/animate.min.css" rel="stylesheet" />
+    <link href="~/Content/css-userLayout/demo.css" rel="stylesheet" />
+  <!--Paper Dashboard-->
+    <link href="~/Content/css-userLayout/paper-dashboard.css" rel="stylesheet" />
+    <link href="~/Content/css-userLayout/themify-icons.css" rel="stylesheet" />
+    <!--Bootstrap core-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!--   Core JS Files   -->
+
+    <script src="~/Content/js/jquery-1.10.2.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <!--  Checkbox, Radio & Switch Plugins -->
+    <script src="~/Content/js/bootstrap-checkbox-radio.js"></script>
+    <!--  Charts Plugin -->
+    <script src="~/Content/js/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="~/Content/js/bootstrap-notify.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="~/Content/js/ggMap.js"></script>
+    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+    <script src="~/Content/js/paper-dashboard.js"></script>
+   
+</head>
+<body>
+    @RenderBody()
+    <div class="wrapper">
+        <div class="sidebar" data-background-color="white" data-active-color="danger">
+            <!--
+                Tip 1: you can change the color of the sidebar's background using: data-background-color="white | black"
+                Tip 2: you can change the color of the active button using the data-active-color="primary | info | success | warning | danger"
+            -->
+            <div class="sidebar-wrapper">
+                <div class="logo">
+                    <a class="simple-text">
+                        MENU
+                    </a>
+                </div>
+                <ul class="nav">
+                    <li class="active">
+                        <a href="trang_chu.html">
+                            <i class="ti-home"></i>
+                            <p>Trang chủ</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ho_so.html">
+                            <i class="ti-user"></i>
+                            <p>Hồ sơ</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="danh_sach.html">
+                            <i class="ti-clipboard"></i>
+                            <p>Danh sách</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lich_truc.html">
+                            <i class="ti-calendar"></i>
+                            <p>Lịch trực</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="lich_thuc_hanh.html">
+                            <i class="ti-pin-alt"></i>
+                            <p>Lịch thực hành</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="thong_tin.html">
+                            <i class="ti-info-alt"></i>
+                            <p>Thông tin</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-panel">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar bar1"></span>
+                            <span class="icon-bar bar2"></span>
+                            <span class="icon-bar bar3"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Trang chủ</a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-shift-right-alt"></i>
+                                    <p>Admin</p>
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="ti-bell"></i>
+                                    <p class="notification">5</p>
+                                    <p>Thông báo</p>
+                                    <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Thông báo 1</a></li>
+                                    <li><a href="#">Thông báo 2</a></li>
+                                    <li><a href="#">Thông báo 3</a></li>
+                                    <li><a href="#">Thông báo 4</a></li>
+                                    <li><a href="#">Thông báo khác</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-settings"></i>
+                                    <p>Thiết lập</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-power-off"></i>
+                                    <p>Đăng xuất</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Giới thiệu</h4>
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            Nhằm đáp ứng nhu cầu học tập, nghiên cứu, việc học bộ môn Tin học đại cương, cũng như việc học thực hành và thi trắc nghiệm trên máy tính của sinh viên toàn trường, nhà trường đã nâng cấp toàn bộ hệ thống máy tính và trang bị thêm nhiều phòng máy đáp ứng nhu cầu sử dụng máy tính ngày càng tăng của sinh viên.
+                                        </p>
+                                        <p style="text-align: left">
+                                            Hệ thống phòng máy của trường Đại học Lạc Hồng bao gồm 10 phòng máy nằm trong tòa nhà C (cơ sở 1). Mỗi phòng chứa trung bình khoảng 50 - 80 máy tính. Tất cả các phòng máy đều được trang bị đầy đủ tiện nghi như máy lạnh, máy chiếu, hệ thống wifi thuận lợi cho việc học tập và thực hành của sinh viên.
+                                        </p>
+                                        <p style="text-align :center">
+
+                                            <img src="~/Content/image/phong_may.JPG" />  style="width: 800px; height:533px;">
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <ul class="pagination">
+                                        <li class="disabled"><span>&laquo;</span></li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                    <div class="footer">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <nav class="pull-left">
+                        <ul>
+                            <li>
+                                <a href="http://www.creative-tim.com">
+                                    Creative Tim
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://blog.creative-tim.com">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.creative-tim.com/license">
+                                    Licenses
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="copyright pull-right">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>, phiên bản của <a>Team</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
